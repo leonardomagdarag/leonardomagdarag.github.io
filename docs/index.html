@@ -12,26 +12,32 @@
   </head>
   <body>
     <nav>
-      <div class="logo">Leonardo B. Magdarag Jr.</div>
+      <h1 class="logo">Leonardo B. Magdarag Jr.</h1>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/takumoKun">Github</a></li>
+        <li><a href="https://github.com/leonardomagdarag">Github</a></li>
       </ul>
     </nav>
 
     <header class="hero">
-      <h1>Leonardo B. Magdarag Jr</h1>
-      <h3>Programmer | Student | Tech Enthusiast</h3>
-      <p>
-        Welcome to my personal webpage! Here, you'll find links to my social
-        media profiles, portfolio, and contact information. Feel free to explore
-        and connect with me!
-      </p>
+      <div class="hero-content">
+        <h1 class="first-name animate-typing">Leonardo B.</h1>
+        <h1 class="last-name">Magdarag Jr.</h1>
+        <h3>Programmer | Student | Tech Enthusiast</h3>
+        <p>
+          Welcome to my personal webpage! Here, you'll find links to my social
+          media profiles, portfolio, and contact information. Feel free to explore
+          and connect with me!
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/portfolio.png" alt="Portrait of Leonardo B. Magdarag Jr" />
+      </div>
     </header>
 
-    <section class="about" id="about">
+    <section class="about animate" id="about">
       <h2>About Me</h2>
       <p>
         I'm a passionate programmer and tech enthusiast who loves creating
@@ -62,7 +68,7 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects animate" id="projects">
       <h2>Projects & Portfolio</h2>
       <p>
         Here are some projects I’ve built—school activities, fun experiments,
@@ -96,19 +102,36 @@
       </div>
     </section>
 
-    <footer id="contact">
-      <p>© 2025 Leonardo B. Magdarag Jr | All Rights Reserved</p>
-      <div class="footer-links">
-        <a href="https://facebook.com/" target="_blank"
-          ><i class="fab fa-facebook"></i
-        ></a>
-        <a href="mailto:sample.email@example.com"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a href="https://linkedin.com/" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
+    <section class="contact animate" id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Have a question or want to collaborate? Feel free to send me a message!
+      </p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 Leonardo B. Magdarag Jr | All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="https://facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="mailto:sample.email@example.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
