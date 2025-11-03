@@ -118,6 +118,17 @@ header.hero {
   box-shadow: var(--shadow);
 }
 
+/* Defensive fallback: ensure any image inside header is constrained and circular
+   (covers cases where .hero-image wrapper is missing in production builds) */
+header img {
+  display: block;
+  margin-inline: auto;
+  width: clamp(180px, 45vw, 360px);
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* animation used is from https://css-tricks.com/snippets/css/typewriter-effect/ */
 
 header h1 {
