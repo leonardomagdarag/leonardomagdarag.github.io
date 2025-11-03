@@ -119,7 +119,9 @@ header.hero {
 }
 
 /* Defensive fallback: ensure any image inside header is constrained and circular
-   (covers cases where .hero-image wrapper is missing in production builds) */
+   (covers cases where .hero-image wrapper is missing in production builds) 
+   Copilot did this cuz i have no idea how github handles this stuff
+   */
 header img {
   display: block;
   margin-inline: auto;
@@ -129,8 +131,6 @@ header img {
   object-fit: cover;
 }
 
-/* animation used is from https://css-tricks.com/snippets/css/typewriter-effect/ */
-
 header h1 {
   font-size: 3.5rem;
   overflow: hidden;
@@ -138,6 +138,9 @@ header h1 {
   width: 0;
 }
 
+/* animation used is from https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+/* I had to do this weird stuff cuz i have to animate the 2 h1 elements at different times using javascript*/
 header h1.animate-typing {
   border-right: .15em solid orange;
   animation: 
