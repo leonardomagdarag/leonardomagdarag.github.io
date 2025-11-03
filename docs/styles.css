@@ -110,7 +110,7 @@ header.hero {
 }
 
 .hero-image img {
-  width: 220px;
+  width: 280px;
   max-width: 60vw;
   height: auto;
   border-radius: 50%;
@@ -123,7 +123,7 @@ header.hero {
 header img {
   display: block;
   margin-inline: auto;
-  width: clamp(180px, 45vw, 360px);
+  width: clamp(220px, 45vw, 420px);
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -411,7 +411,6 @@ footer {
 }
 
 /*========= Responsive Design =========*/
-/*========= Responsive Design =========*/
 /* Tablets and up */
 @media (min-width: 768px) {
   header.hero {
@@ -429,7 +428,7 @@ footer {
   }
 
   .hero-image img {
-    width: min(28vw, 360px);
+    width: min(32vw, 420px);
   }
 }
 
@@ -456,7 +455,7 @@ footer {
   }
 
   .hero-image img {
-    width: 180px;
+    width: 220px;
   }
 
   section {
